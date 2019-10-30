@@ -8,7 +8,7 @@
 [![Coverage Status](https://coveralls.io/repos/jaspenlind/index-of-any/badge.svg?branch=master)](https://coveralls.io/r/jaspenlind/index-of-any?branch=master)
 ![David](https://img.shields.io/david/jaspenlind/index-of-any)
 ![GitHub](https://img.shields.io/github/license/jaspenlind/index-of-any)
-[![npm](https://img.shields.io/npm/v/node-ts-starter-template)](https://www.npmjs.com/package/index-of-any)
+[![npm](https://img.shields.io/npm/v/index-of-any)](https://www.npmjs.com/package/index-of-any)
 
 ## Installation
 
