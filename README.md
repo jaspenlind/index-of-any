@@ -18,6 +18,8 @@ npm install index-of-any
 
 ## Usage
 
+### Search strings
+
 ```js
 import indexOfAny from "index-of-any";
 
@@ -26,6 +28,18 @@ const searchStrings = ["first", "second", "third"];
 const [index, searchString] = indexOfAny("a string containing second search string");
 
 ==> [20, "second"]
+```
+
+### Search arrays
+
+```js
+import indexOfAny from "index-of-any";
+
+const strings = ["first", "second", "third"];
+
+const [index, searchString] = indexOfAny(strings, "second");
+
+==> [2, "second"]
 ```
 
 ## Test

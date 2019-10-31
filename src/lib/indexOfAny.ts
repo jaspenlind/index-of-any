@@ -1,6 +1,11 @@
+import { IndexOfAny } from "../types";
+
 const missing = -1;
 
-export const indexOfAny = (value: string, ...searchStrings: string[]): [number, string | null] => {
+export const indexOfAny: IndexOfAny = (
+  value: string | string[],
+  ...searchStrings: string[]
+): [number, string | null] => {
   for (const searchString of searchStrings) {
     const index = value.indexOf(searchString);
     if (index >= 0) {
