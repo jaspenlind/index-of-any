@@ -1,3 +1,3 @@
-export { IndexOfAll } from "./indexOfAll";
+export { IndexOfAll } from "./IndexOfAll";
 export { IndexOfAny } from "./IndexOfAny";
 export { MatchedIndexResult } from "./MatchedIndexResult";
