@@ -29,6 +29,15 @@ describe("indexOfAny", () => {
       expect(index).toBe(indexOfMatch);
     });
 
+    it("should return first matching search string", () => {
+      const value = "-key>=5";
+      const searchStrings = [">=", "=", "=>"];
+
+      const [, matchingString] = indexOfAny(value, ...searchStrings);
+
+      expect(matchingString).toBe(">=");
+    });
+
     it("should be null when not found", () => {
       const [, match] = indexOfAny("value", "other");
       expect(match).toBe(null);
