@@ -1,4 +1,4 @@
-import { indexOfAll } from "../src/lib/indexOfAll";
+import { indexOfAll } from "../src";
 
 describe("indexOfAll", () => {
   it("should return all matching results", () => {
