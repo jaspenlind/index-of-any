@@ -16,7 +16,7 @@ export const indexOfAll: IndexOfAll = (value: string | string[], ...searchString
   const result: MatchedIndexResult[] = [];
   for (const matchingString of searchStrings) {
     if (typeof value === "string") {
-      getAllIndexPositions(value, matchingString).forEach(index => {
+      getAllIndexPositions(value, matchingString).forEach((index) => {
         result.push({ index, matchingString });
       });
     } else {
