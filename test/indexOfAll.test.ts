@@ -1,11 +1,8 @@
-import { indexOfAll } from "../src";
+// import { indexOfAll } from "../src";
 
+/*     const searchStrings = [">", ">=", "==>", "test"];
+
+    const result = indexOfAll("some>value>=value2==>value3", ...searchStrings); */
 describe("indexOfAll", () => {
-  it("should return all matching results", () => {
-    const searchStrings = [">", ">=", "==>", "test"];
-
-    const result = indexOfAll("some>value>=value2==>value3", ...searchStrings);
-
-    test.todo("todo");
-  });
+  it.todo("should return all matching results");
 });

@@ -1,17 +1,25 @@
 import { indexOfAny } from "../src";
 
+const noMatch = { index: -1, match: null };
+
 describe("indexOfAny", () => {
   describe("strings", () => {
     it("can handle empty string", () => {
-      indexOfAny("", "searchString");
+      const [index, match] = indexOfAny("", "searchString");
+      expect(index).toBe(noMatch.index);
+      expect(match).toBe(noMatch.match);
     });
 
     it("can handle empty search string", () => {
-      indexOfAny("value", "");
+      const [index, match] = indexOfAny("value", "");
+      expect(index).toBe(noMatch.index);
+      expect(match).toBe(noMatch.match);
     });
 
     it("can handle empty search string array", () => {
-      indexOfAny("value", ...[]);
+      const [index, match] = indexOfAny("value", ...[]);
+      expect(index).toBe(noMatch.index);
+      expect(match).toBe(noMatch.match);
     });
 
     it("should return matched search string", () => {
@@ -52,15 +60,21 @@ describe("indexOfAny", () => {
   });
   describe("arrays", () => {
     it("can handle empty array", () => {
-      indexOfAny([], "searchString");
+      const [index, match] = indexOfAny([], "searchString");
+      expect(index).toBe(noMatch.index);
+      expect(match).toBe(noMatch.match);
     });
 
     it("can handle empty search string", () => {
-      indexOfAny(["value"], "");
+      const [index, match] = indexOfAny(["value"], "");
+      expect(index).toBe(noMatch.index);
+      expect(match).toBe(noMatch.match);
     });
 
     it("can handle empty search string array", () => {
-      indexOfAny(["value"], ...[]);
+      const [index, match] = indexOfAny(["value"], ...[]);
+      expect(index).toBe(noMatch.index);
+      expect(match).toBe(noMatch.match);
     });
 
     it("should return matched search string", () => {
