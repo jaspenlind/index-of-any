@@ -3,7 +3,7 @@
 - Like string indexOf with multiple search strings
 
 [![Build Status](https://travis-ci.com/jaspenlind/index-of-any.svg?branch=master)](https://travis-ci.com/jaspenlind/index-of-any)
-[![Codacy Badge](https://app.codacy.com/project/badge/Grade/5f4453dacba44ee88ada0bed1d51996c)](https://www.codacy.com/gh/jaspenlind/index-of-any/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=jaspenlind/index-of-any&amp;utm_campaign=Badge_Grade)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/5f4453dacba44ee88ada0bed1d51996c)](https://www.codacy.com/gh/jaspenlind/index-of-any/dashboard?utm_source=github.com&utm_medium=referral&utm_content=jaspenlind/index-of-any&utm_campaign=Badge_Grade)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 [![Coverage Status](https://coveralls.io/repos/jaspenlind/index-of-any/badge.svg?branch=master)](https://coveralls.io/r/jaspenlind/index-of-any?branch=master)
 ![David](https://img.shields.io/david/jaspenlind/index-of-any)
