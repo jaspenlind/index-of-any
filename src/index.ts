@@ -1,6 +1,5 @@
-import { indexOfAny } from "./lib/indexOfAny";
+import { indexOfAny } from "./lib/index-of-any";
 
-export { indexOfAny };
-export { indexOfAll } from "./lib/indexOfAll";
+export * from "./lib";
 
 export default indexOfAny;

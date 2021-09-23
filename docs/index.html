@@ -1,0 +1,43 @@
+<!DOCTYPE html><html class="default no-js"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>index-of-any</title><meta name="description" content="Documentation for index-of-any"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="assets/style.css"/><link rel="stylesheet" href="assets/highlight.css"/><script async src="assets/search.js" id="search-script"></script></head><body><header><div class="tsd-page-toolbar"><div class="container"><div class="table-wrap"><div class="table-cell" id="tsd-search" data-base="."><div class="field"><label for="tsd-search-field" class="tsd-widget search no-caption">Search</label><input type="text" id="tsd-search-field"/></div><ul class="results"><li class="state loading">Preparing search index...</li><li class="state failure">The search index is not available</li></ul><a href="index.html" class="title">index-of-any</a></div><div class="table-cell" id="tsd-widgets"><div id="tsd-filter"><a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a><div class="tsd-filter-group"><div class="tsd-select" id="tsd-filter-visibility"><span class="tsd-select-label">All</span><ul class="tsd-select-list"><li data-value="public">Public</li><li data-value="protected">Public/Protected</li><li data-value="private" class="selected">All</li></ul></div> <input type="checkbox" id="tsd-filter-inherited" checked/><label class="tsd-widget" for="tsd-filter-inherited">Inherited</label><input type="checkbox" id="tsd-filter-externals" checked/><label class="tsd-widget" for="tsd-filter-externals">Externals</label></div></div><a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a></div></div></div></div><div class="tsd-page-title"><div class="container"><h1>index-of-any</h1></div></div></header><div class="container container-main"><div class="row"><div class="col-8 col-content"><div class="tsd-panel tsd-typography">
+<a href="#index-of-any" id="index-of-any" style="color: inherit; text-decoration: none;">
+  <h1>index-of-any</h1>
+</a>
+<ul>
+<li>Like string indexOf with multiple search strings</li>
+</ul>
+<p><a href="https://travis-ci.com/jaspenlind/index-of-any"><img src="https://travis-ci.com/jaspenlind/index-of-any.svg?branch=master" alt="Build Status"></a>
+<a href="https://www.codacy.com/manual/jaspenlind/index-of-any?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=jaspenlind/index-of-any&amp;utm_campaign=Badge_Grade"><img src="https://api.codacy.com/project/badge/Grade/d53c318f91a54f49822d30d9974c1003" alt="Codacy Badge"></a>
+<a href="https://github.com/prettier/prettier"><img src="https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square" alt="code style: prettier"></a>
+<a href="https://coveralls.io/r/jaspenlind/index-of-any?branch=master"><img src="https://coveralls.io/repos/jaspenlind/index-of-any/badge.svg?branch=master" alt="Coverage Status"></a>
+<img src="https://img.shields.io/david/jaspenlind/index-of-any" alt="David">
+<img src="https://img.shields.io/github/license/jaspenlind/index-of-any" alt="GitHub">
+<a href="https://www.npmjs.com/package/index-of-any"><img src="https://img.shields.io/npm/v/index-of-any" alt="npm"></a></p>
+
+<a href="#installation" id="installation" style="color: inherit; text-decoration: none;">
+  <h2>Installation</h2>
+</a>
+<pre><code class="language-shell"><span class="hl-0">npm install index-of-any</span>
+</code></pre>
+
+<a href="#usage" id="usage" style="color: inherit; text-decoration: none;">
+  <h2>Usage</h2>
+</a>
+
+<a href="#search-strings" id="search-strings" style="color: inherit; text-decoration: none;">
+  <h3>Search strings</h3>
+</a>
+<pre><code class="language-js"><span class="hl-1">import</span><span class="hl-0"> </span><span class="hl-2">indexOfAny</span><span class="hl-0"> </span><span class="hl-1">from</span><span class="hl-0"> </span><span class="hl-3">&quot;index-of-any&quot;</span><span class="hl-0">;</span><br/><br/><span class="hl-4">const</span><span class="hl-0"> </span><span class="hl-5">searchStrings</span><span class="hl-0"> = [</span><span class="hl-3">&quot;first&quot;</span><span class="hl-0">, </span><span class="hl-3">&quot;second&quot;</span><span class="hl-0">, </span><span class="hl-3">&quot;third&quot;</span><span class="hl-0">];</span><br/><br/><span class="hl-4">const</span><span class="hl-0"> [</span><span class="hl-5">index</span><span class="hl-0">, </span><span class="hl-5">searchString</span><span class="hl-0">] = </span><span class="hl-6">indexOfAny</span><span class="hl-0">(</span><span class="hl-3">&quot;a string containing second search string&quot;</span><span class="hl-0">);</span><br/><br/><span class="hl-0">==&gt; [</span><span class="hl-7">20</span><span class="hl-0">, </span><span class="hl-3">&quot;second&quot;</span><span class="hl-0">]</span>
+</code></pre>
+
+<a href="#search-arrays" id="search-arrays" style="color: inherit; text-decoration: none;">
+  <h3>Search arrays</h3>
+</a>
+<pre><code class="language-js"><span class="hl-1">import</span><span class="hl-0"> </span><span class="hl-2">indexOfAny</span><span class="hl-0"> </span><span class="hl-1">from</span><span class="hl-0"> </span><span class="hl-3">&quot;index-of-any&quot;</span><span class="hl-0">;</span><br/><br/><span class="hl-4">const</span><span class="hl-0"> </span><span class="hl-5">strings</span><span class="hl-0"> = [</span><span class="hl-3">&quot;first&quot;</span><span class="hl-0">, </span><span class="hl-3">&quot;second&quot;</span><span class="hl-0">, </span><span class="hl-3">&quot;third&quot;</span><span class="hl-0">];</span><br/><br/><span class="hl-4">const</span><span class="hl-0"> [</span><span class="hl-5">index</span><span class="hl-0">, </span><span class="hl-5">searchString</span><span class="hl-0">] = </span><span class="hl-6">indexOfAny</span><span class="hl-0">(</span><span class="hl-2">strings</span><span class="hl-0">, </span><span class="hl-3">&quot;second&quot;</span><span class="hl-0">);</span><br/><br/><span class="hl-0">==&gt; [</span><span class="hl-7">2</span><span class="hl-0">, </span><span class="hl-3">&quot;second&quot;</span><span class="hl-0">]</span>
+</code></pre>
+
+<a href="#test" id="test" style="color: inherit; text-decoration: none;">
+  <h2>Test</h2>
+</a>
+<pre><code class="language-shell"><span class="hl-0">npm </span><span class="hl-6">test</span>
+</code></pre>
+</div></div><div class="col-4 col-menu menu-sticky-wrap menu-highlight"><nav class="tsd-navigation primary"><ul><li class="current"><a href="modules.html">Exports</a></li></ul></nav><nav class="tsd-navigation secondary menu-sticky"><ul><li class="tsd-kind-reference"><a href="modules.html#indexOfAny" class="tsd-kind-icon">index<wbr/>Of<wbr/>Any</a></li><li class="tsd-kind-function"><a href="modules.html#default" class="tsd-kind-icon">default</a></li><li class="tsd-kind-function"><a href="modules.html#indexOfAll" class="tsd-kind-icon">index<wbr/>Of<wbr/>All</a></li></ul></nav></div></div></div><footer class="with-border-bottom"><div class="container"><h2>Settings</h2><p>Theme <select id="theme"><option value="os">OS</option><option value="light">Light</option><option value="dark">Dark</option></select></p></div></footer><div class="container tsd-generator"><p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p></div><div class="overlay"></div><script src="assets/main.js"></script></body></html>
