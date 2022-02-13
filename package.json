@@ -1,6 +1,6 @@
 {
   "name": "index-of-any",
-  "version": "1.4.1",
+  "version": "1.4.2",
   "description": "Like string indexOf with multiple search strings",
   "main": "dist/src/index.js",
   "types": "dist/src/index.d.ts",
